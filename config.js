@@ -41,25 +41,25 @@ var config = {
     btc: {
       livenet: {
         provider: 'insight',
-        url: 'https://insight.bitpay.com:443',
+        url: 'https://insight.botcoin-core.com:443',
       },
       testnet: {
         provider: 'insight',
-        url: 'https://test-insight.bitpay.com:443',
+        url: 'https://test-insight.botcoin-core.com:443',
         // Multiple servers (in priority order)
-        // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
+        // url: ['http://a.b.c', 'https://test-insight.botcoin-core.com:443'],
       },
     },
     bch: {
       livenet: {
         provider: 'insight',
-        //url: 'https://cashexplorer.bitcoin.com',
-        url: 'https://bch-insight.bitpay.com:443',
+        //url: 'https://cashexplorer.botcoin.com',
+        url: 'https://bch-insight.botcoin-core.com:443',
         addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
       },
       testnet: {
         provider: 'insight',
-        url: 'https://test-bch-insight.bitpay.com:443',
+        url: 'https://test-bch-insight.botcoin-core.com:443',
         addressFormat: 'cashaddr',  // copay, cashaddr, or legacy
       },
 
@@ -83,18 +83,18 @@ var config = {
   //  port: 25,
   //  ignoreTLS: true,
   //  subjectPrefix: '[Wallet Service]',
-  //  from: 'wallet-service@bitcore.io',
+  //  from: 'wallet-service@botcore.io',
   //  templatePath: './lib/templates',
   //  defaultLanguage: 'en',
   //  defaultUnit: 'btc',
   //  publicTxUrlTemplate: {
   //    btc: {
-  //      livenet: 'https://insight.bitpay.com/tx/{{txid}}',
-  //      testnet: 'https://test-insight.bitpay.com/tx/{{txid}}',
+  //      livenet: 'https://insight.botcoin-core.com/tx/{{txid}}',
+  //      testnet: 'https://test-insight.botcoin-core.com/tx/{{txid}}',
   //    },
   //    bch: {
-  //      livenet: 'https://bch-insight.bitpay.com/tx/{{txid}}',
-  //      testnet: 'https://test-bch-insight.bitpay.com/tx/{{txid}}',
+  //      livenet: 'https://bch-insight.botcoin-core.com/tx/{{txid}}',
+  //      testnet: 'https://test-bch-insight.botcoin-core.com/tx/{{txid}}',
   //    }
   //  },
   // },

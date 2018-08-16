@@ -2,7 +2,7 @@
 
 var should = require('chai').should();
 var proxyquire = require('proxyquire');
-var bitcore = require('bitcore-lib');
+var botcore = require('botcore-lib');
 var sinon = require('sinon');
 var Service = require('../bitcorenode');
 
@@ -109,7 +109,7 @@ describe('Bitcore Node Service', function() {
     it('livenet local insight', function() {
       var options = {
         node: {
-          network: bitcore.Networks.livenet,
+          network: botcore.Networks.livenet,
           port: 3001
         }
       };
@@ -124,7 +124,7 @@ describe('Bitcore Node Service', function() {
     it('testnet local insight', function() {
       var options = {
         node: {
-          network: bitcore.Networks.testnet,
+          network: botcore.Networks.testnet,
           port: 3001
         }
       };

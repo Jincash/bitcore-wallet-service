@@ -7,8 +7,8 @@ var https = require('https');
 var http = require('http');
 var async = require('async');
 var path = require('path');
-var bitcore = require('bitcore-lib');
-var Networks = bitcore.Networks;
+var botcore = require('botcore-lib');
+var Networks = botcore.Networks;
 var Locker = require('locker-server');
 var BlockchainMonitor = require('../lib/blockchainmonitor');
 var EmailService = require('../lib/emailservice');
@@ -84,7 +84,7 @@ Service.prototype._getConfiguration = function() {
     apiPrefix: '/insight-api'
   };
 
-  // A bitcore-node is either livenet or testnet, so we'll pass
+  // A botcore-node is either livenet or testnet, so we'll pass
   // the configuration options to communicate via the local running
   // instance of the insight-api service.
   if (self.node.network === Networks.livenet) {

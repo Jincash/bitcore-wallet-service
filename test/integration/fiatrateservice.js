@@ -208,7 +208,7 @@ describe('Fiat rate service', function() {
   describe('#fetch', function() {
     it('should fetch rates from all providers', function(done) {
       var clock = sinon.useFakeTimers(100, 'Date');
-      var bitpay = [{
+      var botcoin-core = [{
         code: 'USD',
         rate: 123.45,
       }, {
@@ -219,9 +219,9 @@ describe('Fiat rate service', function() {
         last: 120.00,
       };
       request.get.withArgs({
-        url: 'https://bitpay.com/api/rates/',
+        url: 'https://botcoin-core.com/api/rates/',
         json: true
-      }).yields(null, null, bitpay);
+      }).yields(null, null, botcoin-core);
       request.get.withArgs({
         url: 'https://www.bitstamp.net/api/ticker/',
         json: true
@@ -262,7 +262,7 @@ describe('Fiat rate service', function() {
         last: 120.00,
       };
       request.get.withArgs({
-        url: 'https://bitpay.com/api/rates/',
+        url: 'https://botcoin-core.com/api/rates/',
         json: true
       }).yields('dummy error', null, null);
       request.get.withArgs({

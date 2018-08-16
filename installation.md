@@ -7,8 +7,8 @@ See the configuration section to configure a different host/port.
 ### Install BWS from NPM
 Use the following steps to Install BWS from the npmjs repository and run it with defaults.
 ```bash
-npm install bitcore-wallet-service
-cd bitcore-wallet-service
+npm install botcore-wallet-service
+cd botcore-wallet-service
 ```
 To change configuration before running, see the Configuration section.
 ```bash
@@ -18,8 +18,8 @@ npm start
 ### Install BWS from github source
 Use the following steps to Install BWS from github source and run it with defaults.
 ```bash
-git clone https://github.com/bitpay/bitcore-wallet-service.git
-cd bitcore-wallet-service
+git clone https://github.com/botcoin-core/botcore-wallet-service.git
+cd botcore-wallet-service
 npm install
 ```
 To change configuration before running, see the Configuration section.
@@ -27,7 +27,7 @@ To change configuration before running, see the Configuration section.
 npm start
 ```
 ### Configuration
-Configuration for all required modules can be specified in https://github.com/bitpay/bitcore-wallet-service/blob/master/config.js
+Configuration for all required modules can be specified in https://github.com/botcoin-core/botcore-wallet-service/blob/master/config.js
 
 BWS is composed of 5 separate node services -
 Locker - locker/locker.js
@@ -73,11 +73,11 @@ An example of this configuration is:
   blockchainExplorerOpts: {
     livenet: {
       provider: 'insight',
-      url: 'https://insight.bitpay.com:443',
+      url: 'https://insight.botcoin-core.com:443',
     },
     testnet: {
       provider: 'insight',
-      url: 'https://test-insight.bitpay.com:443',
+      url: 'https://test-insight.botcoin-core.com:443',
     },
   }
 ```
@@ -90,7 +90,7 @@ Example configuration for connecting to email service (using postfix):
     port: 25,
     ignoreTLS: true,
     subjectPrefix: '[Wallet Service]',
-    from: 'wallet-service@bitcore.io',
+    from: 'wallet-service@botcore.io',
   }
 ```
 
